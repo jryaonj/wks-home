@@ -33,7 +33,7 @@ mem_bw = 2666 * 64 * 2 / 8
 #### formular
 ```
 gpu_processing_power = number_of_gpu_stream_process * gpu_core_frequency * equivalent_FMA_cycle / ghz_mhz_ratio
-    TFLOPS                                               (base_freq) MHz            2                  10^6
+ FP32 TFLOPS                                             (base_freq) MHz            2                  10^6
 ```
 
 #### examples
@@ -48,10 +48,15 @@ gpu_pp = 2304 * 1120 * 2 / 1e6
 gpu_pp = 10496 * 1395 * 2 / 1e6
        = 29.28 TFLOPS
 # 5 - amd radeon rx 6600 
-gpu_pp = 
+gpu_pp = 1792 * 1626 *2 / 1e6
+       =  5.83 TFLOPS
 # 4 - amd radeon rx 7900 xtx 
-gpu_pp =
+gpu_pp = 6144 * 1900 * 2(RDNA3) * 2 / 1e6
+       = 23.34 TFLOPS
 ```
+
+* [wikipedia/List_of_Nvidia_graphics_processing_units](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units)
+* [wikipedia/List_of_AMD_graphics_processing_units](https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units)
 
 #### hints
 for modern application, at least `1TFLOPS` is required.
